@@ -1,1 +1,8 @@
 apikey: ""
+
+#
+# Ændret af Zodry
+#
+# Gjort så man kan bruge udbetaling af ems i flere skript versioner
+# SA Store eksemple er her https://github.com/Zodry/SAStore.1.2.1-Zodry
+#
