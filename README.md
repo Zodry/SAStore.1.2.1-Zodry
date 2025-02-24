@@ -2,7 +2,7 @@
 Det her er SA's store plugin forked af Zodry til at virke sammen med flere versioner af skript
 
 > [!WARNING]
->  Det er ikke sikkert dette plugin er updateret og virker.
+>  Det er ikke sikkert dette plugin er opdateret og virker.
 
 # Eksempel
 
