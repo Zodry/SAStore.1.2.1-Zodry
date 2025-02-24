@@ -14,7 +14,7 @@ import org.bukkit.event.Event;
 import org.jetbrains.annotations.NotNull;
 
 public class EffPayout extends Effect {
-    private Expression<Integer> amount;
+    private Expression<Long> amount;
     private Expression<Player> player;
     private Expression<String> title;
     private Expression<String> reason;
@@ -29,7 +29,7 @@ public class EffPayout extends Effect {
 
         try {
             Player target = player.getSingle(e);
-            Integer num = amount.getSingle(e);
+            Long num = amount.getSingle(e);
             String header = title.getSingle(e);
             String desc = reason.getSingle(e);
 
@@ -71,7 +71,7 @@ public class EffPayout extends Effect {
 
     @Override
     public boolean init(Expression<?>[] exprs, int matchedPattern, @NotNull Kleenean isDelayed, @NotNull SkriptParser.ParseResult parseResult) {
-        this.amount = (Expression<Integer>) exprs[0];
+        this.amount = (Expression<Long>) exprs[0];
         this.player = (Expression<Player>) exprs[1];
         this.title = (Expression<String>) exprs[2];
         this.reason = (Expression<String>) exprs[3];
